@@ -15,8 +15,10 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-
-
+// root route (home.ejs)
+app.get("/", function(req, res) {
+  res.render("home");
+});
 
 
 
