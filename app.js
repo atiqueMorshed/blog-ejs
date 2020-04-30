@@ -7,8 +7,13 @@ const _ = require("lodash");
 const mongoose = require("mongoose");
 
 // DBConnect
-mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true, useUnifiedTopology: true});
-
+// mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true, useUnifiedTopology: true});
+//////////////////////////////////////////////////////
+// USERNAME / PASSWORD EXCLUDED FOR SECURITY PURPOSES
+//////////////////////////////////////////////////////
+mongoose.connect("mongodb+srv://AtiqueMorshedC0:44kJChh110R4j4.@cluster0-dom0m.mongodb.net/blogDB", {useNewUrlParser: true , useUnifiedTopology: true });
+mongoose.set("useFindAndModify", false);
+////////////////////////////////// DB /////////////////////////////////////
 // Schema
 const postSchema = {
   title: {
