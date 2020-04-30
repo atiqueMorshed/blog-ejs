@@ -11,7 +11,7 @@ const mongoose = require("mongoose");
 //////////////////////////////////////////////////////
 // USERNAME / PASSWORD EXCLUDED FOR SECURITY PURPOSES
 //////////////////////////////////////////////////////
-mongoose.connect("mongodb+srv://AtiqueMorshedC0:44kJChh110R4j4.@cluster0-dom0m.mongodb.net/blogDB", {useNewUrlParser: true , useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://U:P@cluster0-dom0m.mongodb.net/blogDB", {useNewUrlParser: true , useUnifiedTopology: true });
 mongoose.set("useFindAndModify", false);
 ////////////////////////////////// DB /////////////////////////////////////
 // Schema
